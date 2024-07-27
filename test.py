@@ -5,76 +5,6 @@ This is a Python script that demonstrates how to calculate the area of a rectang
 """
 
 
-# Function to calculate the area of a rectangle
-def calculate_area(length, width):
-    """
-    Calculates the area of a rectangle.
-
-    Parameters:
-    - length (float): The length of the rectangle.
-    - width (float): The width of the rectangle.
-
-    Returns:
-    - area (float): The area of the rectangle.
-    """
-    area = length * width
-    return area
-
-# Function to calculate the square root of a number
-def calculate_square_root(number):
-    """
-    Calculates the square root of a number.
-
-    Parameters:
-    - number (float): The number to calculate the square root of.
-
-    Returns:
-    - square_root (float): The square root of the number.
-    """
-    square_root = math.sqrt(number)
-    return square_root
-
-# Prompt the user to enter the length and width of the rectangle
-length = float(input("Enter the length of the rectangle: "))
-width = float(input("Enter the width of the rectangle: "))
-
-# Calculate and print the area of the rectangle
-area = calculate_area(length, width)
-print("The area of the rectangle is:", area)
-
-# Prompt the user to enter a number to calculate its square root
-number = float(input("Enter a number to calculate its square root: "))
-
-# Calculate and print the square root of the number
-square_root = calculate_square_root(number)
-print("The square root of", number, "is:", square_root)
-
-
-
-# Create a new function to calculate the perimeter of a rectangle
-def calculate_perimeter(length, width):
-    """
-    Calculates the perimeter of a rectangle.
-
-    Parameters:
-    - length (float): The length of the rectangle.
-    - width (float): The width of the rectangle.
-
-    Returns:
-    - perimeter (float): The perimeter of the rectangle.
-    """
-    perimeter = 2 * (length + width)
-    return perimeter
-
-# Prompt the user to enter the length and width of the rectangle
-length = float(input("Enter the length of the rectangle: "))
-width = float(input("Enter the width of the rectangle: "))
-# Calculate and print the perimeter of the rectangle
-perimeter = calculate_perimeter(length, width)
-print("The perimeter of the rectangle is:", perimeter)
-
-
-
 # is there a way to run a small piece of code directly in vscode without running the whole file?
 # Yes, you can run a small piece of code directly in VSCode using the Python Interactive window. To do this, follow these steps:
 # 1. Open the Python file in VSCode.
@@ -121,6 +51,63 @@ print("The perimeter of the rectangle is:", perimeter)
 # A: To switch back to the feature branch from the main branch, you can use the following command:
 #Q: how to get a list of all branches in git?
 # A: To get a list of all branches in Git, you can use the following command:
+#Q: how to delete a branch in git in terminal?
+# A: To delete a branch in Git using the terminal, you can use the following command:
+
+
+# Create a function that inputs a string not more than 10 characters in length, does not allow vowels in it, else returns 
+# an error message that the string is invalid as it contains vowels. If valid, print the string backwards and in uppercase.
+import sys
+
+def process_string():
+    """
+    Inputs a string not more than 10 characters in length, does not allow vowels in it, else returns an error message that the string is invalid as it contains vowels.
+    If valid, prints the string backwards and in uppercase.
+    """
+    # Check if the command-line argument is provided
+    if len(sys.argv) != 2:
+        print("Error: Please provide a single string as a command-line argument.")
+        return
+    
+    # Get the string from the command-line argument
+    string = sys.argv[1]
+    
+    # Check if the string is valid
+    if len(string) > 10:
+        print("Error: The string is invalid as it contains more than 10 characters.")
+    elif any(char in 'aeiouAEIOU' for char in string):
+        print("Error: The string is invalid as it contains vowels.")
+    else:
+        # Print the string backwards and in uppercase
+        reversed_string = string[::-1]
+        uppercase_string = reversed_string.upper()
+        print("The processed string is:", uppercase_string)
+
+if __name__ == "__main__":
+    process_string()
+
+# test the above function
+# python test.py "hello"
+# python test.py "world"
+# python test.py "python"
+# python test.py "HELLO"
+# python test.py "WORLD"
+# python test.py "PYTHON"
+# python test.py "helloworld"
+# python test.py "HELLOWORLD"
+# python test.py "PYTHONHELLO"
+# also give a brief explanation for reason of that test case
+# The test cases are as follows:
+# 1. python test.py "hello": The string "hello" contains vowels, so it should return an error message.
+# 2. python test.py "world": The string "world" does not contain vowels and is less than 10 characters, so it should print the reversed string in uppercase.
+# 3. python test.py "python": The string "python" contains vowels, so it should return an error message.
+# 4. python test.py "HELLO": The string "HELLO" contains vowels, so it should return an error message.
+# 5. python test.py "WORLD": The string "WORLD" does not contain vowels and is less than 10 characters, so it should print the reversed string in uppercase.
+# 6. python test.py "PYTHON": The string "PYTHON" contains vowels, so it should return an error message.
+# 7. python test.py "helloworld": The string "helloworld" contains vowels, so it should return an error message.
+# 8. python test.py "HELLOWORLD": The string "HELLOWORLD" contains vowels, so it should return an error message.
+# 9. python test.py "PYTHONHELLO": The string "PYTHONHELLO" contains vowels, so it should return an error message.
+# The test cases cover scenarios where the input string contains vowels, is longer than 10 characters, or is a valid string that can be processed.
 
 
 
