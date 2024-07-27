@@ -82,3 +82,20 @@ print("The perimeter of the rectangle is:", perimeter)
 # 3. Right-click on the selected code snippet.
 # 4. Choose "Run Selection/Line in Python Interactive Window" from the context menu.
 
+
+# how to know which branch are you currently on in git?
+# To know which branch you are currently on in Git, you can use the following command:
+# Q:  where can we see the current branch in vscode?
+# Q: how to stage changes in git using vscode because when i commit it says do you want to stage changes first?
+# A: To stage changes in Git using VSCode, you can follow these steps:
+# 1. Open the file that you want to stage changes for.
+# 2. Make the necessary changes to the file.
+# 3. Save the changes by pressing "Ctrl + S" or "Cmd + S" on Mac.
+# 4. Open the Source Control view by clicking on the Source Control icon in the Activity Bar on the side of the window.
+# 5. You will see a list of changed files in the Source Control view.
+# 6. Click on the "+" icon next to the file you want to stage changes for. This will stage the changes.
+# 7. Once you have staged all the changes you want to commit, enter a commit message in the text box at the top of the Source Control view.
+# 8. Press "Ctrl + Enter" or click on the checkmark icon to commit the changes.
+# 9. If you see a message asking you to stage changes first, follow the steps above to stage the changes before committing.
+
+# Testing with another stage
