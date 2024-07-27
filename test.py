@@ -98,4 +98,29 @@ print("The perimeter of the rectangle is:", perimeter)
 # 8. Press "Ctrl + Enter" or click on the checkmark icon to commit the changes.
 # 9. If you see a message asking you to stage changes first, follow the steps above to stage the changes before committing.
 
-# Testing with another stage
+# q: if i have locally committed changes in a branch and want to merge it with the main branch, how can i do that?
+# A: To merge locally committed changes from a branch into the main branch, you can follow these steps:\
+# 1. Make sure you are on the branch that you want to merge changes from (e.g., feature-branch).
+# 2. Commit your changes to the branch using the following commands:
+# git add .
+# git commit -m "Commit message"
+# 3. Switch to the main branch using the following command:
+# git checkout main
+# 4. Merge the changes from the feature branch into the main branch using the following command:
+# git merge feature-branch
+# 5. Resolve any merge conflicts if necessary.
+# 6. Push the changes to the remote repository using the following command:
+# git push origin main
+# This will merge the changes from the feature branch into the main branch and push the changes to the remote repository.
+# Q: Why can't i first push the changes to the remote repository and then merge the branch with the main branch?
+# A: You can push the changes to the remote repository before merging the branch with the main branch, but it is generally recommended to merge the changes locally first to resolve any conflicts and ensure that the changes are integrated correctly. Pushing the changes to the remote repository before merging can lead to conflicts with the main branch if other developers have made changes in the meantime. By merging locally first, you can resolve any conflicts and ensure that the changes are integrated smoothly before pushing them to the remote repository.
+#Q: how to switch to main branch in git in terminal?
+# A: To switch to the main branch in Git using the terminal, you can use the following command:
+# git checkout main
+#Q: and how to switch back to the feature branch?
+# A: To switch back to the feature branch from the main branch, you can use the following command:
+#Q: how to get a list of all branches in git?
+# A: To get a list of all branches in Git, you can use the following command:
+
+
+
